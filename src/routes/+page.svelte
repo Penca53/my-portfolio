@@ -1,1 +1,56 @@
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
+<script>
+	import './shooting-star.css';
+</script>
+
+<div class="night">
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+	<div class="shooting_star" />
+</div>
