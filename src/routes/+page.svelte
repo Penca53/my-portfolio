@@ -2,6 +2,10 @@
 	import './shooting-star.css';
 	import './candle.css';
 	import { onMount } from 'svelte';
+	// @ts-ignore
+	import Typewriter from 'typewriter-effect/dist/core';
+
+	let welcomeText: HTMLHeadingElement;
 
 	let candle1: HTMLDivElement;
 	let candle1__eyes_one: HTMLSpanElement;
@@ -44,7 +48,7 @@
 		setTimeout(() => {
 			candle2__fire.style.width = '16px';
 			candle2__fire.style.height = '20px';
-		}, (2000 * 85) / 100);
+		}, (2000 * 88) / 100);
 	};
 	const setDarkTheme = () => {
 		// Candle1
@@ -104,22 +108,64 @@
 			candle1__eyes_one.style.animation = 'blink-eyes-wait 3s infinite linear';
 			candle1__eyes_two.style.animation = 'blink-eyes-wait 3s infinite linear';
 		}
+
+		const typewriter = new Typewriter(welcomeText, {
+			loop: true,
+			delay: 75
+		});
+
+		typewriter
+			.pauseFor(1500)
+			.typeString('Welcome!')
+			.pauseFor(2000)
+			.deleteAll()
+			.typeString('std::cout << "Hello I\'m Mirco!" << std::endl;')
+			.pauseFor(2000)
+			.deleteAll()
+			.typeString('console.log("I ♥ programming!");')
+			.pauseFor(2000)
+			.deleteAll()
+			.typeString('Console.WriteLine("Contact me!");')
+			.pauseFor(2000)
+			.deleteAll()
+			.start();
 	});
 </script>
 
 <div class="w-full h-full flex items-center justify-center z-10 absolute">
-	<div class="w-4/5 max-w-5xl bg-neutral-800 p-6 rounded-md text-neutral-300">
-		<h1 class="text-8xl font-extralight">Welcome</h1>
+	<div
+		class="w-4/5 max-w-5xl bg-neutral-800 shadow-2xl shadow-zinc-900 p-6 rounded-md text-neutral-300"
+	>
+		<!-- svelte-ignore a11y-missing-content -->
+		<h1
+			class="text-5xl bg-slate-800 p-4 border-l-2 border-neutral-400 rounded font-extralight whitespace-nowrap overflow-x-scroll"
+			bind:this={welcomeText}
+		/>
 
-		<div class="flex justify-between">
-			<p>
-				Self-taught programmer, web & game developer, competitive programmer with a passion for
-				pushing the boundaries of computer science. I began my coding journey when I was 10 years
-				old and have been passionate about it ever since, building the future one line at a time…
-			</p>
+		<div class="mt-16 flex justify-between gap-12">
+			<div>
+				<p
+					class="hvr-forward text-justify text-lg border-l-8 pl-2 border-neutral-600 rounded transition ease duration-300 hover:border-orange-500 hover:border-opacity-70"
+				>
+					Self-taught programmer, experienced in web && game development, interested in competitive
+					programming and with a passion for pushing the boundaries of computer science.
+				</p>
 
-			<div class="flex flex-col justify-between gap-2">
-				<a href="https://github.com/Penca53" target="_blank" rel="noopener noreferrer">
+				<p
+					class="hvr-forward text-justify text-lg border-l-8 pl-2 mt-8 border-neutral-600 rounded transition ease duration-300 hover:border-orange-500 hover:border-opacity-70"
+				>
+					Began my coding journey when I was 10 years old and have been passionate about it ever
+					since, building the future one line at a time…
+				</p>
+			</div>
+
+			<div class="-mt-4 flex flex-col justify-between gap-2 fill-neutral-300">
+				<a
+					class="hvr-grow"
+					href="https://github.com/Penca53"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
 						><path
 							d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
@@ -128,6 +174,7 @@
 				</a>
 
 				<a
+					class="hvr-grow"
 					href="https://www.linkedin.com/in/mirco-mazzoni-022816219/"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -139,7 +186,7 @@
 					>
 				</a>
 
-				<a href="mailto:pencapencator@gmail.com">
+				<a class="hvr-grow" href="mailto:pencapencator@gmail.com">
 					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
 						><path
 							d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
@@ -151,7 +198,7 @@
 	</div>
 </div>
 
-<div class="wrapper">
+<div class="wrapper hvr-grow-sm">
 	<button class="candles" on:click={() => onCandleClick()}>
 		<div class="candle1" bind:this={candle1}>
 			<div class="candle1__body">
