@@ -138,7 +138,7 @@
 	>
 		<!-- svelte-ignore a11y-missing-content -->
 		<h1
-			class="text-5xl bg-slate-800 p-4 border-l-2 border-neutral-400 rounded font-extralight whitespace-nowrap overflow-x-scroll"
+			class="text-5xl bg-slate-800 border-t-2 border-t-neutral-900 border-r-2 border-r-neutral-900 border-b-2 border-b-neutral-900 p-4 border-l-4 border-l-neutral-400 rounded font-extralight whitespace-nowrap overflow-x-scroll"
 			bind:this={welcomeText}
 		/>
 
