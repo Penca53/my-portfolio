@@ -3,14 +3,6 @@ body {
 	animation: change-background 3s infinite linear;
 }
 
-.wrapper {
-	position: absolute;
-	right: 10%;
-	bottom: 5%;
-	transform: scale(1, 1) translate(-50%, -50%);
-	z-index: 10;
-}
-
 .floor {
 	position: absolute;
 	left: 50%;
@@ -449,52 +441,52 @@ body {
 
 @keyframes stick-animation {
 	0%,
-	30% {
+	20% {
 		left: 50%;
 		top: 0%;
 		transform: translate(-50%, -100%);
 	}
-	40%,
-	44% {
+	30%,
+	34% {
 		left: 50%;
 		top: 0%;
 		transform: translate(-50%, -100%);
 	}
-	49% {
+	39% {
 		left: 50%;
 		top: 0%;
 		transform: translate(-50%, -100%);
 	}
-	52% {
+	42% {
 		left: 50%;
 		top: 0%;
 		transform: rotateZ(-15deg) translate(-50%, -100%);
 	}
-	55% {
+	45% {
 		left: 50%;
 		top: 0%;
 		transform: rotateZ(15deg) translate(-50%, -100%);
 	}
-	60% {
+	50% {
 		left: 50%;
 		top: 0%;
 		transform: rotateZ(-5deg) translate(-50%, -100%);
 	}
-	62% {
+	52% {
 		left: 50%;
 		top: 0%;
 		transform: rotateZ(5deg) translate(-50%, -100%);
 	}
-	64%,
-	74% {
+	54%,
+	64% {
 		left: 50%;
 		top: 0%;
 		transform: rotateZ(0deg) translate(-50%, -100%);
 	}
-	75% {
+	65% {
 		transform: rotateZ(180deg) translate(0%, 120%);
 	}
-	85% {
+	73% {
 		left: 50%;
 		top: 0%;
 		transform: translate(-50%, -100%);
