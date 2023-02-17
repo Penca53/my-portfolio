@@ -29,7 +29,6 @@
 	let isChangingTheme = false;
 	const setLightTheme = () => {
 		localStorage.theme = 'light';
-		document.documentElement.classList.remove('dark');
 
 		// Candle2
 		candle2.style.animation = 'shake-left 2s linear';
@@ -51,11 +50,11 @@
 		setTimeout(() => {
 			candle2__fire.style.width = '16px';
 			candle2__fire.style.height = '20px';
+			document.documentElement.classList.remove('dark');
 		}, (2000 * 72) / 100);
 	};
 	const setDarkTheme = () => {
 		localStorage.theme = 'dark';
-		document.documentElement.classList.add('dark');
 
 		// Candle1
 		candle1.style.animation = 'expand-body 2s linear';
@@ -76,6 +75,7 @@
 		setTimeout(() => {
 			candle2__fire.style.width = '0px';
 			candle2__fire.style.height = '0px';
+			document.documentElement.classList.add('dark');
 		}, (2000 * 60) / 100);
 
 		// Candle
@@ -153,13 +153,20 @@
 	});
 </script>
 
+<div
+	class="opacity-100 dark:opacity-0 main-light absolute z-0 w-full h-full transition duration-500"
+/>
+<div
+	class="opacity-0 dark:opacity-100 main-dark absolute z-0 w-full h-full transition duration-500"
+/>
+
 <div class="w-full h-full flex flex-col items-center justify-between z-10 absolute">
 	<div class="grow w-full min-h-0 flex items-center justify-center">
 		<div
-			class="mt-8 max-h-full overflow-y-scroll w-5/6 md:w-4/5 max-w-5xl border border-neutral-500 dark:border-neutral-700 bg-neutral-300 dark:bg-neutral-800 shadow-2xl shadow-zinc-900 p-6 rounded-md text-neutral-800 dark:text-neutral-300"
+			class="transition duration-500 mt-8 max-h-full overflow-y-scroll w-5/6 md:w-4/5 max-w-5xl border border-neutral-500 dark:border-neutral-700 bg-neutral-300 dark:bg-neutral-800 shadow-2xl shadow-zinc-900 p-6 rounded-md text-neutral-800 dark:text-neutral-300"
 		>
 			<h1
-				class="font-mono text-md sm:text-xl md:text-2xl lg:text-3xl bg-slate-300 dark:bg-slate-800 border-t-2 border-t-neutral-900 border-r-2 border-r-neutral-900 border-b-2 border-b-neutral-900 p-4 border-l-4 border-l-red-600 dark:border-l-lime-500 rounded font-extralight whitespace-nowrap overflow-x-scroll"
+				class="transition duration-500 font-mono text-md sm:text-xl md:text-2xl lg:text-3xl bg-slate-300 dark:bg-slate-800 border-t-2 border-t-neutral-900 border-r-2 border-r-neutral-900 border-b-2 border-b-neutral-900 p-4 border-l-4 border-l-red-600 dark:border-l-lime-500 rounded font-extralight whitespace-nowrap overflow-x-scroll"
 				bind:this={welcomeText}
 			>
 				&nbsp
@@ -168,7 +175,7 @@
 			<div class="mt-8 md:mt-16 flex flex-col md:flex-row justify-between gap-12">
 				<div class="text-sm sm:text-base md:text-lg">
 					<p
-						class="hvr-forward text-justify border-l-8 pl-2 border-neutral-400 dark:border-neutral-600 rounded transition ease duration-300 hover:border-blue-600 dark:hover:border-orange-500 hover:border-opacity-80"
+						class="transition duration-300 ease hvr-forward text-justify border-l-8 pl-2 border-neutral-400 dark:border-neutral-600 rounded hover:border-blue-600 dark:hover:border-orange-500 hover:border-opacity-80"
 					>
 						Self-taught programmer, experienced in web && game development, interested in
 						competitive programming and with a passion for pushing the boundaries of computer
@@ -176,7 +183,7 @@
 					</p>
 
 					<p
-						class="hvr-forward text-justify border-l-8 pl-2 mt-8 border-neutral-400 dark:border-neutral-600 rounded transition ease duration-300 hover:border-blue-600 dark:hover:border-orange-500 hover:border-opacity-80"
+						class="transition duration-300 ease hvr-forward text-justify border-l-8 pl-2 mt-8 border-neutral-400 dark:border-neutral-600 rounded hover:border-blue-600 dark:hover:border-orange-500 hover:border-opacity-80"
 					>
 						Began my coding journey when I was 10 years old and have been passionate about it ever
 						since, building the future one line at a time…
@@ -184,7 +191,7 @@
 				</div>
 
 				<div
-					class="md:-mt-4 flex md:flex-col justify-evenly md:justify-between md:gap-2 dark:fill-neutral-300"
+					class="transition duration-500 md:-mt-4 flex md:flex-col justify-evenly md:justify-between md:gap-2 dark:fill-neutral-300"
 				>
 					<a
 						class="hvr-grow z-10"
