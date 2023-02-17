@@ -1,8 +1,3 @@
-body {
-	background-color: #fff;
-	animation: change-background 3s infinite linear;
-}
-
 .floor {
 	position: absolute;
 	left: 50%;

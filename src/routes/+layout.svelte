@@ -3,7 +3,7 @@
 </script>
 
 <div>
-	<main>
+	<main class="main-light dark:main-dark">
 		<slot />
 	</main>
 

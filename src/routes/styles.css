@@ -6,6 +6,20 @@ body {
 	font-family: 'Courier New', Courier, monospace;
 }
 
+@layer base {
+	.main-dark {
+		background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	.main-light {
+		background: radial-gradient(ellipse at top, #b6c2ff 0%, #75abe8 100%);
+		height: 100vh;
+		overflow: hidden;
+	}
+}
+
 .hvr-grow {
 	display: inline-block;
 	vertical-align: middle;
