@@ -1,5 +1,6 @@
 <script lang="ts">
 	import './shooting-star.css';
+	import './clouds.css';
 	import './candle.css';
 	import { onMount } from 'svelte';
 	// @ts-ignore
@@ -317,5 +318,128 @@
 		<div class="shooting_star" />
 		<div class="shooting_star" />
 		<div class="shooting_star" />
+	</div>
+</div>
+
+<div class="block dark:hidden overflow-hidden h-full">
+	<div class="cloud large cloud-1">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud normal cloud-2">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud small cloud-3">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud tiny cloud-4">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud large cloud-5">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud normal cloud-6">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud small cloud-7">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud tiny cloud-8">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud small cloud-9">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud normal cloud-10">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud tiny cloud-11">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud small cloud-12">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud tiny cloud-13">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud small cloud-14">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud large cloud-15">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud normal cloud-16">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud large cloud-17">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud tiny cloud-18">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud normal cloud-19">
+		<div />
+		<div />
+		<div />
+		<div />
+	</div>
+	<div class="cloud small cloud-20">
+		<div />
+		<div />
+		<div />
+		<div />
 	</div>
 </div>
