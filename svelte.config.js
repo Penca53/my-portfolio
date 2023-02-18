@@ -11,7 +11,7 @@ const config = {
  kit: {
   adapter: adapter(),
   paths: {
-	base: dev ? '' : '/your-repo-name',
+	base: dev ? '' : '/my-portfolio',
   },
   // If you are not using a .nojekyll file, change your appDir to something not starting with an underscore.
   // For example, instead of '_app', use 'app_', 'internal', etc.
