@@ -63,6 +63,10 @@
 	});
 </script>
 
+<svelte:head>
+	<meta name="description" content="Penca53's portfolio website" />
+</svelte:head>
+
 <!-- Switch is done using CSS (no need of Svelte if clauses) -->
 <LoadingScreen />
 
@@ -114,6 +118,7 @@
 						href="https://github.com/Penca53"
 						target="_blank"
 						rel="noopener noreferrer"
+						aria-label="My GitHub"
 					>
 						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
 							><path
@@ -127,6 +132,7 @@
 						href="https://www.linkedin.com/in/mirco-mazzoni-022816219/"
 						target="_blank"
 						rel="noopener noreferrer"
+						aria-label="My LinkedIn"
 					>
 						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
 							><path
@@ -135,7 +141,11 @@
 						>
 					</a>
 
-					<a class="hvr-grow z-10" href="mailto:pencapencator@gmail.com">
+					<a
+						class="hvr-grow z-10"
+						href="mailto:pencapencator@gmail.com"
+						aria-label="Send me an email"
+					>
 						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
 							><path
 								d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
