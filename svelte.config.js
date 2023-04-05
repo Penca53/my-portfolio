@@ -11,7 +11,7 @@ const config = {
  kit: {
   adapter: adapter(),
   paths: {
-	base: dev ? '' : '/my-portfolio',
+	base: dev ? '' : '',
   }
  }
 };
